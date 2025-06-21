@@ -1,52 +1,48 @@
-# README
+# PSAFNet 🧠🎯
 
-## Disclaimer
-This repository contains code developed to support a scholarly paper currently under review. Please note that the paper is currently under review and the results, methods, or conclusions may change based on the final review process. The provided code reflects the state of the research at the time of submission and may be subject to further revisions.
+## 📌 Disclaimer
+This repository contains code developed to support the paper **"Brain-inspired deep learning model for EEG-based low-quality video target detection with phased encoding and aligned fusion"**, now **published in *Expert Systems with Applications (ESWA)*** 🎉.  
+👉 [https://doi.org/10.1016/j.eswa.2025.128189](https://doi.org/10.1016/j.eswa.2025.128189)
 
+Please note that this code reflects the final state of the research as published. We encourage the community to build upon and extend this work.
 
-## File discription
-- `cross_subject_evaluation.py`
+---
 
-  The code of cross subject training and evaluation 
+## 📁 File Description
 
-- `PSAFNet.py`
+- `cross_subject_evaluation.py`  
+  Code for cross-subject training and evaluation.
 
-  PSAFNet: Phase Segment and Aligned Fusion Net (proposed model)
+- `PSAFNet.py`  
+  PSAFNet: Phase Segment and Aligned Fusion Net (proposed model)  
+  Input shape: `[batchsize, 1, channels, timepoints]`
 
-  The size of input: [batchsize, 1, channels, timepoints]
+- `data_processing.py`  
+  Functions for data loading and segmentation.
 
-- `data_processing.py`
+- `train.py`  
+  Training, validation, and testing logic.
 
-  The function of data loading and segmentation
+- `utils.py`  
+  Utility functions used across the codebase.
 
-- `train.py`
+- `my_config.py`  
+  Hyperparameter configuration file.
 
-  The function of training, validation and testing
+- `requirements.txt`  
+  Package versions used in the project.
 
-- `utils.py`
+---
 
-  Other universal function
+## ⚙️ Install
 
-- `my_config.py`
-
-  Hyperparameters configuration file
-
-- `requirements.txt`
-
-  Version of the package to use
-
-## Install
 ```bash
 git clone https://github.com/Wonder-How/PSAFNet.git
 cd PSAFNet
 pip install -r requirements.txt
-```
 
+If you have any questions about the code or research methods, feel free to reach out:
 
-## Contact Information
+📧 Email: wonderhow@bit.edu.cn
 
-If you have any questions about the code or research methods, please contact us via:
-
-- Email: [wonderhow@bit.edu.cn](mailto:wonderhow@bit.edu.cn)
-
-We encourage other researchers to use and extend these methods, and we look forward to your valuable feedback.
+We welcome collaborations, discussions, and any valuable feedback from the research community!
