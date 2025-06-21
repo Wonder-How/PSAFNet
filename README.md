@@ -41,6 +41,8 @@ git clone https://github.com/Wonder-How/PSAFNet.git
 cd PSAFNet
 pip install -r requirements.txt
 
+```
+
 If you have any questions about the code or research methods, feel free to reach out:
 
 📧 Email: wonderhow@bit.edu.cn
